@@ -21,18 +21,18 @@ services:
   webpython:
     build: ./webpython
     container_name: webpythonserver
-    #    command: python manage.py runserver 0.0.0.0:8000
-    #    restart: always
-    #    links:
-    #      - dbmongo            
-    #    ports:
-    #      - "8000:8000"
-    #    volumes:
-    #      - ./webpython/code/:/code/        
-    #    networks:
-    #      - frontend
-    #      - backend        
-        
+    command: python manage.py runserver 0.0.0.0:8000
+    restart: always
+    links:
+      - dbmongo            
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./webpython/code/:/code/        
+    networks:
+      - frontend
+      - backend        
+   
   dbmysql:
     image: percona/percona-server:5.7
     container_name: perconaserver

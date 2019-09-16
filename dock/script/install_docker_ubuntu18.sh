@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 apt-cache madison docker-ce
 docker --version
-
+sudo usermod -aG docker krishna
 
 # Docker Compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose

@@ -5,7 +5,7 @@
 <?php
 
 $user = 'root';
-$pass = 'cisco123';
+$pass = 'xxxxxxx';
 
 $connection = new MongoDB\Driver\Manager( "mongodb://$user:$pass@dbmongo:27017" );
 

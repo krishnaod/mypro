@@ -38,8 +38,8 @@ services:
     container_name: perconaserver
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: cisco123
-      MYSQL_DATABASE: butterflyv5
+      MYSQL_ROOT_PASSWORD: xxxxxxxxxx
+      MYSQL_DATABASE: xxxxxxxxxxxxxxxx
     ports:
       - "3306"
     volumes:
@@ -54,7 +54,7 @@ services:
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root 
-      MONGO_INITDB_ROOT_PASSWORD: cisco123
+      MONGO_INITDB_ROOT_PASSWORD: xxxxxxxxx
       MONGO_INITDB_DATABASE: butterflyv5_discovery
     ports:
       - "27017:27017"
@@ -70,7 +70,7 @@ services:
     environment:
       ME_CONFIG_MONGODB_SERVER: dbmongo            
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: cisco123 
+      ME_CONFIG_MONGODB_ADMINPASSWORD: xxxxxxxxx
     networks:
       - frontend            
       - backend      

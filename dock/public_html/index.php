@@ -3,7 +3,7 @@
 <?php
 $host = 'dbmysql';
 $user = 'root';
-$pass = 'cisco123';
+$pass = 'xxxxxx';
 $conn = new mysqli($host, $user, $pass);
 
 if ($conn->connect_error) {
